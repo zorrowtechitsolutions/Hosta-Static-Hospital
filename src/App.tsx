@@ -9,6 +9,7 @@ import {
   MessageCircle,
   Instagram,
   Facebook,
+  Droplet,
 } from "lucide-react";
 import splashscreen_icon from "./assets/splash-icon.png";
 import hosta_icon from "./assets/HOSTAICON.png";
@@ -26,7 +27,7 @@ function App() {
         <GoToTopButton containerId="scrollable-content" />
 
         {/* Header */}
-        <header className="border-b border-white bg-transparent">
+        <header className="border-b border-white bg-transparent absolute">
           <div className="container mx-auto flex items-center justify-between">
             <div className="flex items-center gap-2 h-10">
               <img
@@ -55,7 +56,7 @@ function App() {
         </header>
 
         {/* Hero Section */}
-        <section className="py-20 bg-transparent">
+        <section className="bg-transparent h-screen flex items-center">
           <div className="container mx-auto px-4 text-center">
             <img
               src={hosta_icon}
@@ -67,33 +68,43 @@ function App() {
             <h1 className="text-4xl md:text-6xl font-bold text-emerald-700 mb-6">
               Excellence in Healthcare
             </h1>
-            <p className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto">
-              HOSTA is your comprehensive hospital management solution,
-              connecting patients with healthcare providers across multiple
-              medical systems including Allopathy, Unani, and more.
-            </p>
+            <div className="text-center space-y-6 max-w-3xl mx-auto">
+              <p className="text-lg md:text-xl text-gray-600">
+                <b>HOSTA</b> – Your Complete Healthcare Companion
+                <br />
+                Connect with trusted doctors, hospitals, and clinics across
+                Allopathy, Unani & more. Easily book appointments and manage
+                your healthcare anytime, anywhere. Instantly find or request
+                blood with our integrated Blood Bank feature—all in one app.
+              </p>
+              {/* <p className="text-lg md:text-xl text-gray-600 leading-relaxed">
+                <b>ഹോസ്റ്റ</b> - നിങ്ങളുടെ പൂർണ്ണമായ ആരോഗ്യ പരിപാലന സഹായി. അലോപ്പതി, യുനാനി,
+                മറ്റ് ചികിത്സാശാഖകളിലെ ഡോക്ടർമാരുമായും ആശുപത്രികളുമായും
+                ബന്ധപ്പെടൂ. അപ്പോയിൻ്റ്മെൻ്റുകൾ ബുക്ക് ചെയ്യൂ. ഞങ്ങളുടെ ബ്ലഡ്
+                ബാങ്ക് ഫീച്ചറിലൂടെ എളുപ്പത്തിൽ രക്തം കണ്ടെത്തുകയും
+                ആവശ്യപ്പെടുകയും ചെയ്യൂ. ലളിതം, വേഗത്തിൽ, വിരൽത്തുമ്പിൽ.
+              </p> */}
+            </div>
           </div>
         </section>
 
         {/* Platforms Section */}
-        <section id="platforms" className="py-20">
+        <section id="platforms">
           <div className="container mx-auto px-4">
             <h2 className="text-3xl font-bold text-center text-emerald-700 mb-12">
               Our Platforms
             </h2>
-            <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
+            <div className="flex flex-wrap justify-center gap-8 max-w-6xl mx-auto">
               {[
                 {
                   title: "User Platform",
                   description:
                     "Find and book appointments with healthcare providers",
-                  href: "https://hospital-managements.vercel.app/",
                   icon: <User className="w-12 h-12 text-emerald-600 mb-4" />,
                 },
                 {
                   title: "Hospital Platform",
                   description: "Manage your hospital services and appointments",
-                  href: "https://hospital-management-hospital-side.vercel.app/",
                   icon: (
                     <Hospital className="w-12 h-12 text-emerald-600 mb-4" />
                   ),
@@ -101,27 +112,25 @@ function App() {
                 {
                   title: "Ambulance Platform",
                   description: "Emergency response and ambulance management",
-                  href: "https://hospital-management-ambulance-side.vercel.app/",
                   icon: (
                     <Ambulance className="w-12 h-12 text-emerald-600 mb-4" />
                   ),
                 },
+                {
+                  title: "Blood Bank",
+                  description: "Find, request, and manage blood donations",
+                  icon: <Droplet className="w-12 h-12 text-emerald-600 mb-4" />,
+                },
               ].map((platform) => (
                 <div
                   key={platform.title}
-                  className="bg-white p-6 rounded-lg shadow-lg border border-emerald-100 hover:border-emerald-300 transition-colors"
+                  className="flex-1 min-w-[220px] max-w-[250px] bg-white p-6 rounded-lg shadow-lg border border-emerald-100 hover:border-emerald-300 transition-colors"
                 >
                   {platform.icon}
                   <h3 className="text-xl font-semibold text-emerald-700 mb-2">
                     {platform.title}
                   </h3>
                   <p className="text-gray-600 mb-4">{platform.description}</p>
-                  <a
-                    href={platform.href}
-                    className="text-emerald-600 hover:text-emerald-500 font-medium"
-                  >
-                    Learn more →
-                  </a>
                 </div>
               ))}
             </div>
@@ -129,30 +138,7 @@ function App() {
         </section>
 
         {/* Mobile Apps Section */}
-        {/* <section className="py-20 bg-transparent">
-          <div className="container mx-auto px-4 text-center">
-            <h2 className="text-3xl font-bold text-emerald-700 mb-12">
-              Get the HOSTA Mobile App
-            </h2>
-            <div className="flex flex-wrap justify-center gap-6">
-              <a
-                href="#"
-                className="flex items-center gap-2 bg-black text-white px-6 py-3 rounded-lg hover:bg-gray-800 transition-colors"
-              >
-                <AppStore className="w-6 h-6" />
-                <span>Download on App Store</span>
-              </a>
-              <a
-                href="#"
-                className="flex items-center gap-2 bg-black text-white px-6 py-3 rounded-lg hover:bg-gray-800 transition-colors"
-              >
-                <GooglePlay className="w-6 h-6" />
-                <span>Get it on Google Play</span>
-              </a>
-            </div>
-          </div>
-        </section> */}
-        <section>
+        <section className="mt-20">
           <h2 className="text-3xl font-bold text-emerald-700 mb-12 text-center">
             Get the HOSTA Mobile App
           </h2>
@@ -160,7 +146,7 @@ function App() {
         </section>
 
         {/* Contact Section */}
-        <section id="contact" className="py-20">
+        <section id="contact" className="mt-20">
           <div className="container mx-auto px-4 text-center">
             <h2 className="text-3xl font-bold text-emerald-700 mb-12">
               Contact Us
@@ -170,12 +156,12 @@ function App() {
                 {
                   icon: <MessageCircle className="w-6 h-6" />,
                   title: "Whatsapp",
-                  url: "https://wa.me/918714412090",
+                  url: "https://wa.me/919400517720",
                 },
                 {
                   icon: <Phone className="w-6 h-6" />,
                   title: "Phone",
-                  url: "tel:+918714412090",
+                  url: "tel:+919400517720",
                 },
                 {
                   icon: <Mail className="w-6 h-6" />,
@@ -210,7 +196,7 @@ function App() {
         </section>
 
         {/* Footer */}
-        <footer className="border-t py-8">
+        <footer className="border-t py-8 mt-20">
           <div className="container mx-auto px-4 text-center text-gray-600">
             <p>© {new Date().getFullYear()} HOSTA. All rights reserved.</p>
           </div>
