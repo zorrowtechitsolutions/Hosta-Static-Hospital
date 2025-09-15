@@ -77,13 +77,13 @@ function App() {
                 your healthcare anytime, anywhere. Instantly find or request
                 blood with our integrated Blood Bank feature—all in one app.
               </p>
-              <p className="text-lg md:text-xl text-gray-600 leading-relaxed">
+              {/* <p className="text-lg md:text-xl text-gray-600 leading-relaxed">
                 <b>ഹോസ്റ്റ</b> - നിങ്ങളുടെ പൂർണ്ണമായ ആരോഗ്യ പരിപാലന സഹായി. അലോപ്പതി, യുനാനി,
                 മറ്റ് ചികിത്സാശാഖകളിലെ ഡോക്ടർമാരുമായും ആശുപത്രികളുമായും
                 ബന്ധപ്പെടൂ. അപ്പോയിൻ്റ്മെൻ്റുകൾ ബുക്ക് ചെയ്യൂ. ഞങ്ങളുടെ ബ്ലഡ്
                 ബാങ്ക് ഫീച്ചറിലൂടെ എളുപ്പത്തിൽ രക്തം കണ്ടെത്തുകയും
                 ആവശ്യപ്പെടുകയും ചെയ്യൂ. ലളിതം, വേഗത്തിൽ, വിരൽത്തുമ്പിൽ.
-              </p>
+              </p> */}
             </div>
           </div>
         </section>
