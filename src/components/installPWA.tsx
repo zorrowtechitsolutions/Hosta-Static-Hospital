@@ -1,5 +1,5 @@
 import React from "react";
-import { Download, Apple, Smartphone, ExternalLink } from "lucide-react";
+import {  Apple, Smartphone, ExternalLink } from "lucide-react";
 
 export const InstallPWA: React.FC = () => {
   return (
