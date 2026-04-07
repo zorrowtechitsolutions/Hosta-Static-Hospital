@@ -209,7 +209,6 @@ import {
   Star,
   ArrowRight,
   Heart,
-  Droplet,
   Menu,
   X
 } from "lucide-react";
@@ -225,7 +224,6 @@ function App() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
-  const navigate = useNavigate();
 
   useEffect(() => {
     const handleScroll = () => {
