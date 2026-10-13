@@ -73,13 +73,13 @@ function App() {
           <div className="container mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex items-center justify-between h-16 md:h-20">
               <div className="flex items-center gap-2">
-                <img
-                  src={splashscreen_icon}
-                  alt="HOSTA Logo"
-                  width={45}
-                  height={45}
-                  className="rounded-full border-2 border-emerald-500 shadow-md"
-                />
+<img
+  src={splashscreen_icon}
+  alt="Hosta Healthcare logo"
+  width={45}
+  height={45}
+  className="rounded-full border-2 border-emerald-500 shadow-md"
+/>
                 <span className="text-xl font-bold bg-gradient-to-r from-emerald-700 to-teal-600 bg-clip-text text-transparent hidden sm:inline">
                   HOSTA
                 </span>
@@ -127,7 +127,11 @@ function App() {
         </header>
 
         {/* Hero Section - Modern Design */}
-        <section className="min-h-screen flex items-center pt-16">
+<section
+  id="home"
+  aria-labelledby="home-heading"
+  className="min-h-screen flex items-center pt-16"
+>
           <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-20">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div className="text-center lg:text-left">
@@ -136,7 +140,10 @@ function App() {
                   <span className="text-sm font-semibold text-emerald-700">Your Health Companion</span>
                 </div>
                 
-                <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
+<h1
+  id="home-heading"
+  className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6"
+>
                   <span className="bg-gradient-to-r from-emerald-700 to-teal-600 bg-clip-text text-transparent">
                     Excellence in
                   </span>
