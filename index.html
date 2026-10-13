@@ -1,50 +1,99 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" href="./src/assets/splash-icon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- SEO Meta Tags -->
-    <title>Hosta - Your Complete Healthcare Companion</title>
-    <meta name="description" content="Hosta is your all-in-one healthcare app. Connect with doctors, hospitals, and clinics across multiple medical systems, book appointments, manage health records, and access blood bank services." />
-    <meta name="keywords" content="Hosta, Healthcare App, Doctors, Hospitals, Clinics, Blood Bank, Appointments, Allopathy, Unani" />
+    <!-- Primary SEO -->
+    <title>Hosta Healthcare | Your Complete Healthcare Companion</title>
+
+    <meta
+      name="description"
+      content="Connect with doctors, hospitals, and clinics through Hosta Healthcare. Book appointments, manage health records, and explore blood bank services."
+    />
+
     <meta name="author" content="Zorrow Tech IT Solutions" />
     <meta name="robots" content="index, follow" />
 
-    <!-- Open Graph / Facebook -->
-    <meta property="og:title" content="Hosta - Your Complete Healthcare Companion" />
-    <meta property="og:description" content="Connect with trusted doctors, hospitals, and clinics. Book appointments, manage health records, and access blood bank services." />
+    <!-- Canonical URL -->
+    <link
+      rel="canonical"
+      href="https://hostahealthcare.com/"
+    />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="/splash-icon.png" />
+    <link rel="apple-touch-icon" href="/splash-icon.png" />
+
+    <!-- Open Graph / Facebook / WhatsApp -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://yourwebsite.com/" />
-    <meta property="og:image" content="https://yourwebsite.com/src/assets/splash-icon.png" />
+    <meta
+      property="og:site_name"
+      content="Hosta Healthcare"
+    />
+    <meta
+      property="og:url"
+      content="https://hostahealthcare.com/"
+    />
+    <meta
+      property="og:title"
+      content="Hosta Healthcare | Your Complete Healthcare Companion"
+    />
+    <meta
+      property="og:description"
+      content="Connect with doctors, hospitals, and clinics through Hosta Healthcare. Book appointments, manage health records, and explore blood bank services."
+    />
+    <meta
+      property="og:image"
+      content="https://hostahealthcare.com/splash-icon.png"
+    />
+    <meta
+      property="og:image:alt"
+      content="Hosta Healthcare"
+    />
 
-    <!-- Twitter -->
+    <!-- Twitter / X -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Hosta - Your Complete Healthcare Companion" />
-    <meta name="twitter:description" content="Connect with trusted doctors, hospitals, and clinics. Book appointments, manage health records, and access blood bank services." />
-    <meta name="twitter:image" content="https://yourwebsite.com/src/assets/splash-icon.png" />
+    <meta
+      name="twitter:title"
+      content="Hosta Healthcare | Your Complete Healthcare Companion"
+    />
+    <meta
+      name="twitter:description"
+      content="Connect with doctors, book appointments, manage health records, and explore healthcare services with Hosta."
+    />
+    <meta
+      name="twitter:image"
+      content="https://hostahealthcare.com/splash-icon.png"
+    />
 
-    <!-- Favicon / Icons -->
-    <link rel="apple-touch-icon" sizes="180x180" href="./src/assets/splash-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="./src/assets/splash-icon.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="./src/assets/splash-icon.png" />
+    <!-- Website Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Hosta Healthcare",
+        "url": "https://hostahealthcare.com/"
+      }
+    </script>
 
-    <!-- Structured Data (JSON-LD) -->
+    <!-- Mobile Application Structured Data -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "MobileApplication",
         "name": "Hosta",
-        "operatingSystem": "iOS, Android",
         "applicationCategory": "HealthApplication",
-        "url": "https://yourwebsite.com/",
-        "sameAs": ["https://www.facebook.com/yourpage", "https://twitter.com/yourprofile"]
+        "operatingSystem": "Android, iOS",
+        "url": "https://hostahealthcare.com/"
       }
     </script>
   </head>
+
   <body>
     <div id="root"></div>
+
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
