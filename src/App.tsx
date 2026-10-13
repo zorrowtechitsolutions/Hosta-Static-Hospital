@@ -39,7 +39,7 @@ function App() {
   const features = [
     {
       icon: <Clock className="w-6 h-6" />,
-      title: "24/7 Emergency",
+      title: "24/7 Emergencysdfgnm,.",
       description: "Round-the-clock emergency services"
     },
     {
